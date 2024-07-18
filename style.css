@@ -1,11 +1,14 @@
 body {
-  background-color: #7bc7a3; /* Light yellow background */
+  background-color: #d63636; /* Light yellow background */
 }
 
 h1 {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: Copperplate, Fantasy;
+  font-weight: normal;
 }
 /* Style the buttons */
 button, input[type="text"], input[type="number"], select {
@@ -13,7 +16,7 @@ button, input[type="text"], input[type="number"], select {
   border: none;
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   cursor: pointer;
@@ -26,7 +29,7 @@ button {
   border-radius: 5px;
   border: 1px solid #3e8e41;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
   text-decoration: none;
 }
@@ -38,7 +41,7 @@ input[type="text"], input[type="number"], select {
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -52,7 +55,7 @@ button:hover {
 }
 
 button:active, input[type="text"]:active, input[type="number"]:active, select:active {
-  background-color: #ffffff; /* Darkest green on active */
+  background-color: #2f6c31; /* Darkest green on active */
   border-color: #2f6c31;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
