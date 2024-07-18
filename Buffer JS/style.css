@@ -1,0 +1,93 @@
+body {
+  background-color: #7bc7a3; /* Light yellow background */
+}
+
+h1 {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+/* Style the buttons */
+button, input[type="text"], input[type="number"], select {
+  /* Reset button styles */
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #3e8e41;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+input[type="text"], input[type="number"], select {
+  background-color: #fff; /* White */
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+input[type="text"]:hover, input[type="number"]:hover, select:hover {
+  background-color: #ffffff; /* Darker green on hover */
+  border-color: #2f6c31;
+}
+
+button:hover {
+  background-color: #2f6c31;
+}
+
+button:active, input[type="text"]:active, input[type="number"]:active, select:active {
+  background-color: #ffffff; /* Darkest green on active */
+  border-color: #2f6c31;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+/* Make the map container take up the full page, but not cover the buttons and headings */
+#map {
+  position: absolute;
+  top: 150px; /* adjust this value to match the height of your buttons and headings */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  border: none;
+}
+
+/* Style the select options */
+select option {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+select option:hover {
+  background-color: #f0f0f0;
+}
+
+select option:selected {
+  background-color: #4CAF50;
+  color: #fff;
+}
